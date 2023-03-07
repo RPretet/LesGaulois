@@ -18,5 +18,20 @@ public class Romain {
 	private String prendreParole() {
 		return "Le romain " + nom + " : ";
 	}
-
+	
+	public void recevoirCoup(int forceCoup) {
+		force -= forceCoup;
+		if (force > 0) {
+			parler("Aïe");
+		} else {
+			parler("Jabandonne...");
+		}
+	}
+	public static void main(String[] args) {
+		Romain cubitus= new Romain("Cubitus",6);
+		System.out.println(cubitus.prendreParole());
+		cubitus.parler("Bonjour");
+		cubitus.recevoirCoup(3);
+		cubitus.recevoirCoup(3);
+	}
 }
