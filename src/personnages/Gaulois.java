@@ -22,7 +22,7 @@ public class Gaulois {
 	public void boirePotion(int forcePotion) {
 		effetPotion = forcePotion;
 		parler("Merci Druide, je sens que ma force est "
-				+ effetPotion + "fois décuplée.");
+				+ effetPotion + " fois décuplée.");
 	}
 
 	public void frapper(Romain romain) {
